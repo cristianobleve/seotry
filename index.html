@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    ================================================================================
+    SEZIONE SEO FONDAMENTALE - Inizia a personalizzare da qui
+    ================================================================================
+    -->
+
+    <!-- TITOLO DELLA PAGINA: Il più importante per la SEO. Appare nella linguetta del browser e nei risultati di Google. -->
+    <title>Mario Rossi - Esperto SEO e Sviluppatore Web</title>
+
+    <!-- DESCRIZIONE: Il testo che appare sotto il titolo nei risultati di Google. Deve essere accattivante. (Max 160 caratteri) -->
+    <meta name="description" content="Sono Mario Rossi, un esperto SEO e sviluppatore web con sede a Roma. Aiuto le aziende a crescere online attraverso strategie di ottimizzazione e sviluppo web moderno.">
+
+    <!-- KEYWORDS: Meno importanti per Google oggi, ma utili per altri motori di ricerca. -->
+    <meta name="keywords" content="esperto seo, sviluppatore web, consulente seo, roma, ottimizzazione siti web">
+
+    <!-- AUTORE -->
+    <meta name="author" content="Mario Rossi">
+
+    <!-- CANONICAL URL: Indica a Google qual è l'URL "preferito" per questa pagina, per evitare contenuti duplicati. -->
+    <link rel="canonical" href="https://www.tuosito.com/pagina-esempio.html">
+
+    <!-- 
+    ================================================================================
+    OPEN GRAPH (per Facebook, LinkedIn, etc.) e TWITTER CARDS
+    ================================================================================
+    -->
+    <meta property="og:title" content="Mario Rossi - Esperto SEO e Sviluppatore Web">
+    <meta property="og:description" content="Scopri come posso aiutare la tua azienda a crescere online con strategie SEO e sviluppo web.">
+    <meta property="og:image" content="seo.png"> <!-- USA UN'IMMAGINE REALE 1200x630px -->
+    <meta property="og:url" content="https://www.cristianobleve.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mario Rossi - Esperto SEO e Sviluppatore Web">
+    <meta name="twitter:description" content="Scopri come posso aiutare la tua azienda a crescere online con strategie SEO e sviluppo web.">
+    <meta name="twitter:image" content="seo.png"> <!-- USA LA STESSA IMMAGINE 1200x630px -->
+
+    <!-- 
+    ================================================================================
+    DATI STRUTTURATI (JSON-LD) - Importantissimo per la SEO moderna!
+    Questo codice "spiega" a Google di cosa parla la pagina in modo strutturato.
+    Usa il tool "Rich Results Test" di Google per validarlo dopo averlo compilato.
+    ================================================================================
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mario Rossi",
+      "url": "https://www.cristianobleve.com",
+      "image": "seo.png",
+      "jobTitle": "Esperto SEO e Sviluppatore Web",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Libero Professionista"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Roma",
+        "addressCountry": "IT"
+      },
+      "sameAs": [
+        "https://www.instagram.com/cristiano.bleve",
+        "https://www.linkedin.com/in/cristiano-bleve/",
+        "https://www.facebook.com/bleve.cristiano/",
+        "https://github.com/cristianobleve"
+      ]
+    }
+    </script>
+
+    <!-- 
+    ================================================================================
+    STILE CSS - Tutto in un unico file per semplicità
+    ================================================================================
+    -->
+    <style>
+        /* Importa un font moderno da Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* Reset di base e stili globali */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'inter', sans-serif;
+            background-color: #121826; /* Sfondo scuro */
+            color: #F9FAFB; /* Testo quasi bianco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        /* Contenitore principale della card */
+        .profile-card {
+            background-color: #1A2B3C; /* Blu scuro per la card */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Immagine del profilo */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #00A8E8; /* Bordo azzurro acceso */
+            margin-top: -75px; /* Spinge l'immagine sopra il bordo della card */
+            object-fit: cover;
+            background-color: #121826;
+        }
+
+        /* Header con l'immagine */
+        .profile-header {
+            background-color: #0d1b2a;
+            padding: 40px 20px;
+            padding-bottom: 100px; /* Spazio per far sporgere l'immagine */
+        }
+        
+        /* Contenuto testuale */
+        .profile-content {
+            padding: 20px;
+            padding-top: 90px; /* Spazio per l'immagine */
+            margin-top: -75px; /* Tira su il contenuto */
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #00A8E8; /* Azzurro acceso */
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #D1D5DB; /* Grigio chiaro */
+            margin-bottom: 1.5rem;
+        }
+
+        /* Bottone */
+        .cta-button {
+            background-color: #00A8E8;
+            color: #FFFFFF;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #007EA7;
+            transform: scale(1.05);
+        }
+
+        /* Sezione contatti nascosta */
+        .contact-info {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #374151; /* Linea di separazione */
+            display: none; /* Nascosto di default */
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        .contact-info a {
+            color: #00A8E8;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.8rem;
+            color: #6B7280; /* Grigio scuro */
+            margin-top: 2rem;
+        }
+
+        /* Stili per schermi più piccoli (responsive) */
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .profile-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <article class="profile-card">
+            <header class="profile-header">
+                <!-- IMMAGINE DEL PROFILO: Usa un'immagine quadrata. L'attributo 'alt' è FONDAMENTALE per SEO e accessibilità -->
+                <img src="https://via.placeholder.com/500.png/1A2B3C/FFFFFF?text=La+Tua+Foto" alt="Foto profilo di Mario Rossi, esperto SEO" class="profile-image">
+            </header>
+
+            <section class="profile-content">
+                <!-- NOME E COGNOME -->
+                <h1>Mario Rossi</h1>
+                
+                <!-- QUALIFICA -->
+                <p class="subtitle">Esperto SEO & Sviluppatore Web</p>
+                
+                <!-- BREVE DESCRIZIONE -->
+                <p class="description">
+                    Aiuto professionisti e aziende a raggiungere la vetta dei motori di ricerca. Trasformo la complessità del web in strategie chiare e risultati concreti.
+                </p>
+                
+                <!-- Bottone Call-to-Action -->
+                <button id="contactBtn" class="cta-button">Mostra Contatti</button>
+
+                <!-- Informazioni di contatto (nascoste all'inizio) -->
+                <div id="contactInfo" class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:mario.rossi@email.com">mario.rossi@email.com</a></p>
+                    <p><strong>Sede:</strong> Roma, Italia</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 Mario Rossi. Tutti i diritti riservati.</p>
+            </footer>
+        </article>
+    </main>
+
+    <!-- 
+    ================================================================================
+    JAVASCRIPT - Per una piccola interattività
+    ================================================================================
+    -->
+    <script>
+        // Aspetta che tutto il contenuto della pagina sia caricato prima di eseguire lo script
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Trova il bottone e il div dei contatti tramite il loro ID
+            const contactButton = document.getElementById('contactBtn');
+            const contactInfoDiv = document.getElementById('contactInfo');
+
+            // Aggiungi un "ascoltatore" che esegue una funzione quando il bottone viene cliccato
+            contactButton.addEventListener('click', function() {
+                
+                // Controlla se il div dei contatti è attualmente nascosto
+                if (contactInfoDiv.style.display === 'none' || contactInfoDiv.style.display === '') {
+                    // Se è nascosto, mostralo
+                    contactInfoDiv.style.display = 'block';
+                    contactButton.textContent = 'Nascondi Contatti'; // Cambia il testo del bottone
+                } else {
+                    // Se è visibile, nascondilo
+                    contactInfoDiv.style.display = 'none';
+                    contactButton.textContent = 'Mostra Contatti'; // Riporta il testo originale
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
